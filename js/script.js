@@ -49,16 +49,16 @@ function menu() {
             hP--
         } else if (opcion == 1 && posicion == 11) {
             alert("Te han atacado!")
-            hP = hp - 2
+            hP = hP - 2
         } else if (opcion == 1 && posicion == 11) {
             alert("Te han atacado!")
-            hP = hp - 2
+            hP = hP - 2
         } else if (opcion == 1 && posicion == 11) {
             alert("Te han atacado!")
-            hP = hp - 2
+            hP = hP - 2
         } else if (opcion == 1 && posicion == 11) {
             alert("Te han atacado!")
-            hP = hp - 2
+            hP = hP - 2
         } else if (opcion == 6) {
             alert("Tomaste una pocion magica!")
             hP = 10
