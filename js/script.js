@@ -69,7 +69,7 @@ function menu() {
             posicion++
         }
         if (posicion == 10) {
-            alert("Encontrasste un centauro agresivo! HP = 10")
+            alert("Encontraste un centauro agresivo! HP = 10")
             posicion++
         }
         if (slimeHP <= 0) {
