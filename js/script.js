@@ -23,7 +23,7 @@ function menu() {
         } else if (opcion === 3 && posicion != 6 && posicion != 11) {
             alert("Diste un paso a la izquierda")
             posicion++
-        } else if (opcion === 4 && posicion == 6 && posicion != 11) {
+        } else if (opcion === 4 && posicion == 6) {
             alert("Atacaste!")
             let danioTotal = ataque(arma, nivel)
             slimeHP = slimeHP - danioTotal
