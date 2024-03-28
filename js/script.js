@@ -50,14 +50,14 @@ function menu() {
         } else if (opcion == 1 && posicion == 11) {
             alert("Te han atacado!")
             hP = hP - 2
-        } else if (opcion == 1 && posicion == 11) {
+        } else if (opcion == 2 && posicion == 11) {
             alert("Te han atacado!")
             hP = hP - 2
-        } else if (opcion == 1 && posicion == 11) {
+        } else if (opcion == 3 && posicion == 11) {
             alert("Te han atacado!")
             hP = hP - 2
-        } else if (opcion == 1 && posicion == 11) {
-            alert("Te han atacado!")
+        } else if (opcion == 5 && posicion == 11) {
+            alert("Pasaste el turno \nTe han atacado!")
             hP = hP - 2
         } else if (opcion == 6) {
             alert("Tomaste una pocion magica!")
