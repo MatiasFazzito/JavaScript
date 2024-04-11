@@ -150,25 +150,44 @@ let productos = [
 ]
 
 
-function menu() {
-    let opcion
-    do {
-        opcion = Number(prompt("Que tipo de producto esta buscando? \n opcion 1: salado \n opcion 2: dulce \n opcion 3: sanguches de miga \n opcion 4: panaderia \n opcion 0: cerrar menu"))
 
-        if (opcion === 1) {
-            let salado = productos.filter((el)=>el.categoria.includes("salado"))
-            alert(salado)
-        } else if (opcion === 2) {
-            let dulce = productos.filter((el)=>el.categoria.includes("dulce"))
-            alert(dulce)
-        } else if (opcion === 3) {
-            let miga = productos.filter((el)=>el.categoria.includes("sanguche de miga"))
-            alert(miga)
-        } else if (opcion === 4) {
-            let pana = productos.filter((el)=>el.categoria.includes("panaderia"))
-            alert(pana)
-        }
-    } while (opcion !== 0);
+let categoriaIngresada = prompt("Que tipo de producto esta buscando? \n salado \n dulce \n sanguche de miga \n panaderia").toLowerCase()
+let productosFiltrados = filtro(productos, "categoria")
+console.log(productosFiltrados);
+
+
+function filtro(lista, propiedad) {
+    return lista.filter(el => el[propiedad].toLowerCase() === categoriaIngresada)
 }
 
-menu()
+function listar(lista, propiedad, propiedad2) {
+    let salida = " "
+    for (let i = 0; i < lista.length; i++) {
+        salida = salida + lista[i][propiedad] + " - "+ lista[i][propiedad2] + "\n"
+    }
+    return salida
+}
+let listaProductos = listar(productos, "categoria", "nombre")
+
+console.log(listaProductos);
+
+
+
+/*function ordenar(lista, propiedad, ascendente) {
+    lista.sort(a, b)=> {
+        if (a[propiedad] < b[propiedad]) {
+            return 1
+        } else if (a[propiedad] > b[propiedad]) {
+            return -1
+        } else {
+            return 0
+        }
+    }
+    if(ascendente){
+        lista.reverse()
+    }
+}
+
+ordenar(productos, "subcategoria")
+console.log(productos)
+*/
