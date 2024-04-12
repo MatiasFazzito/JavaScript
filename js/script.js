@@ -149,32 +149,21 @@ let productos = [
     //otros
 ]
 
-
-
-
 //listado de productos
 function listar(lista, propiedad, propiedad2) {
-    let salida = " "
-    for (let i = 0; i < lista.length; i++) {
-        salida = salida + lista[i][propiedad] + " - " + lista[i][propiedad2] + "\n"
-    }
-    return salida
+    return lista.map(producto => producto[propiedad] + " - " + producto[propiedad2]).join ("\n") 
 }
-let listaProductos = listar(productos, "nombre", "categoria")
-
-console.log(listaProductos);
-
+let listaProductos = listar(productos, "nombre", "precio")
+alert(listaProductos);
 
 //Filtro
-function filtro(lista, propiedad) {
-    return lista.filter(el => el[propiedad].toLowerCase() === categoriaIngresada)
-}
-
 let categoriaIngresada = prompt("Que tipo de producto esta buscando? \n salado \n dulce \n sanguche de miga \n panaderia").toLowerCase()
 let productosFiltrados = filtro(productos, "categoria")
 
+function filtro(lista, propiedad) {
+    return lista.filter(el => el[propiedad].toLowerCase() === categoriaIngresada)
+}
 console.log(productosFiltrados);
-
 
 //ordenar por nombre
 function ordenar(lista, propiedad, descendente) {
@@ -191,7 +180,15 @@ function ordenar(lista, propiedad, descendente) {
         lista.reverse()
     }
 }
-
 ordenar(productos, "nombre", false)
 console.log(productos)
 
+
+function menu() {
+    let opcion
+    do {
+        
+    } while (opcion !== 0);
+
+
+}
