@@ -149,13 +149,7 @@ let productos = [
     //otros
 ]
 
-//listado de productos
-function listar(lista, propiedad, propiedad2) {
-    return lista.map(producto => producto[propiedad] + " - " + producto[propiedad2]).join ("\n") 
-}
-let listaProductos = listar(productos, "nombre", "precio")
-alert(listaProductos);
-
+/*
 //Filtro
 let categoriaIngresada = prompt("Que tipo de producto esta buscando? \n salado \n dulce \n sanguche de miga \n panaderia").toLowerCase()
 let productosFiltrados = filtro(productos, "categoria")
@@ -180,15 +174,37 @@ function ordenar(lista, propiedad, descendente) {
         lista.reverse()
     }
 }
-ordenar(productos, "nombre", false)
-console.log(productos)
+ordenar(productos, "nombre", false)*/
 
-
-function menu() {
-    let opcion
-    do {
-        
-    } while (opcion !== 0);
-
-
+//listado de productos
+function listar(lista, propiedad, propiedad1, propiedad2) {
+    return lista.map(producto => producto[propiedad] + ": " + producto[propiedad1] + " - " + producto[propiedad2]).join("\n")
 }
+
+//function agregarCarrito() {
+let carrito = []
+let opcion
+do {
+    opcion = Number(prompt("Elija el producto" + "\n" + listar(productos, "id", "nombre", "precio")))
+    let productoBuscado = productos.find(producto => producto.id === opcion)
+    let productoCarrito = carrito.findIndex(producto => producto.id === opcion)
+
+    console.log(productoBuscado);
+
+    if (productoCarrito !== -1) {
+        carrito[productoCarrito].unidades++
+        carrito[productoCarrito].subtotal = carrito[productoCarrito].subtotal * carrito[productoCarrito].unidades++
+    } else {
+        carrito.push({
+            id: productoBuscado.id,
+            nombre: productoBuscado.nombre,
+            precio: productoBuscado.precio,
+            unidades: 1,
+            subtotal: productoBuscado.precio
+        })
+    }
+
+    console.log(carrito);
+} while (opcion !== 0);
+//}
+//agregarCarrito()
