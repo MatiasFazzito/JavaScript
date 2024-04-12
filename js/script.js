@@ -1,5 +1,5 @@
 let productos = [
-    { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
+/*    { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
     { id: 2, nombre: "Medialuna de manteca", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
     { id: 3, nombre: "Tortita negra", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
     { id: 4, nombre: "Vigilante", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
@@ -60,7 +60,7 @@ let productos = [
     { id: 53, nombre: "Alfajores de maicena gde", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 100 },
     { id: 54, nombre: "Alfajores de milhojas", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 100 },
     //masitas
-
+*/
     { id: 55, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 100 },
     { id: 56, nombre: "Budin de vainilla", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 100 },
     { id: 57, nombre: "Budin de limon", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 100 },
@@ -89,7 +89,7 @@ let productos = [
     { id: 76, nombre: "Pan de pancho", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100 },
     //pan
 
-    { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
+/*    { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
     { id: 78, nombre: "Sanguche de miga Jamon y Tomate", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
     { id: 79, nombre: "Sanguche de miga Jamon y Huevo", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
     { id: 80, nombre: "Sanguche de miga Jamon y Lechuga", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
@@ -126,7 +126,7 @@ let productos = [
     { id: 107, nombre: "Tarta de Jamon y Queso", categoria: "salado", subcategoria: "tarta", stock: 100, precio: 100 },
     { id: 108, nombre: "Tarta de Acelga", categoria: "salado", subcategoria: "tarta", stock: 100, precio: 100 },
     //tartas
-
+*/
     { id: 109, nombre: "Sanguche de carne", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 100 },
     { id: 110, nombre: "Sanguche de pollo", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 100 },
     { id: 111, nombre: "Sanguche de milanesa", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 100 },
