@@ -1,28 +1,28 @@
 let productos = [
-    /*    { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 2, nombre: "Medialuna de manteca", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 3, nombre: "Tortita negra", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 4, nombre: "Vigilante", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 5, nombre: "Budin de pan", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 6, nombre: "Medialuna rellena de DDL", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 7, nombre: "Medialuna rellena de Pastelera", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 8, nombre: "Vigilante con pastelera", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 9, nombre: "Huevo frito", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 10, nombre: "Bola de fraile", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 11, nombre: "Bola de fraile rellena de DDL", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 12, nombre: "Bola de fraile rellena de crema", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 13, nombre: "Donas", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 14, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 15, nombre: "Churro", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 16, nombre: "Churro relleno", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 17, nombre: "Cañoncitos", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 18, nombre: "Boulevard", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 19, nombre: "Ferrocarril crema y manzana", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 20, nombre: "Ferrocarril membrillo y manzana", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 21, nombre: "Manzanita", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 22, nombre: "Palmerita", categoria: "dulce", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 23, nombre: "Librito de grasa", categoria: "salado", subcategoria: "facturas", stock: 100, precio: 100 },
-        { id: 24, nombre: "Cuernito de grasa", categoria: "salado", subcategoria: "facturas", stock: 100, precio: 100 },
+    /*    { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 2, nombre: "Medialuna de manteca", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 3, nombre: "Tortita negra", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 4, nombre: "Vigilante", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 5, nombre: "Budin de pan", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 6, nombre: "Medialuna rellena de DDL", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 7, nombre: "Medialuna rellena de Pastelera", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 8, nombre: "Vigilante con pastelera", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 9, nombre: "Huevo frito", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 10, nombre: "Bola de fraile", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 11, nombre: "Bola de fraile rellena de DDL", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 12, nombre: "Bola de fraile rellena de crema", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 13, nombre: "Donas", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 14, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 15, nombre: "Churro", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 16, nombre: "Churro relleno", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 17, nombre: "Cañoncitos", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 18, nombre: "Boulevard", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 19, nombre: "Ferrocarril crema y manzana", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 20, nombre: "Ferrocarril membrillo y manzana", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 21, nombre: "Manzanita", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 22, nombre: "Palmerita", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 23, nombre: "Librito de grasa", categoria: "salado", subcategoria: "factura", stock: 100, precio: 100 },
+        { id: 24, nombre: "Cuernito de grasa", categoria: "salado", subcategoria: "factura", stock: 100, precio: 100 },
         //facturas
     
         { id: 25, nombre: "Pastafrola de membrillo", categoria: "dulce", subcategoria: "tarta", stock: 100, precio: 100 },
@@ -89,24 +89,24 @@ let productos = [
     { id: 76, nombre: "Pan de pancho", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100 },
     //pan
 
-    /*    { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
-        { id: 78, nombre: "Sanguche de miga Jamon y Tomate", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
-        { id: 79, nombre: "Sanguche de miga Jamon y Huevo", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
-        { id: 80, nombre: "Sanguche de miga Jamon y Lechuga", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
-        { id: 81, nombre: "Sanguche de miga Jamon y Aceituna", categoria: "sanguche de miga", subcategoria: "comun", stock: 100, precio: 100 },
-        { id: 82, nombre: "Sanguche de miga Jamon y Atun", categoria: "sanguche de miga", subcategoria: "especial", stock: 100, precio: 100 },
-        { id: 83, nombre: "Sanguche de miga Jamon y Palmito", categoria: "sanguche de miga", subcategoria: "especial", stock: 100, precio: 100 },
-        { id: 84, nombre: "Sanguche de miga Jamon y Roquefort", categoria: "sanguche de miga", subcategoria: "especial", stock: 100, precio: 100 },
-        { id: 85, nombre: "Sanguche de miga Jamon y Anana", categoria: "sanguche de miga", subcategoria: "especial", stock: 100, precio: 100 },
-        { id: 86, nombre: "Sanguche de miga Crudo y Queso", categoria: "sanguche de miga", subcategoria: "especial", stock: 100, precio: 100 },
-        { id: 87, nombre: "Sanguche de miga Queso y atun", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 88, nombre: "Sanguche de miga Queso y huevo", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 89, nombre: "Sanguche de miga Queso y Tomate", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 90, nombre: "Sanguche de miga Queso y Berenjena", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 91, nombre: "Sanguche de miga Queso y choclo", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 92, nombre: "Sanguche de miga Queso y Pickles", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 93, nombre: "Sanguche de miga Queso y aceituna", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
-        { id: 94, nombre: "Sanguche de miga Queso y morron", categoria: "sanguche de miga", subcategoria: "base de queso", stock: 100, precio: 100 },
+    /*    { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//comun
+        { id: 78, nombre: "Sanguche de miga Jamon y Tomate", categoria: "salado", subcategoria: "sanguche de miga"", stock: 100, precio: 100 },//
+        { id: 79, nombre: "Sanguche de miga Jamon y Huevo", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 80, nombre: "Sanguche de miga Jamon y Lechuga", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 81, nombre: "Sanguche de miga Jamon y Aceituna", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 82, nombre: "Sanguche de miga Jamon y Atun", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//especial
+        { id: 83, nombre: "Sanguche de miga Jamon y Palmito", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 84, nombre: "Sanguche de miga Jamon y Roquefort", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 85, nombre: "Sanguche de miga Jamon y Anana", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 86, nombre: "Sanguche de miga Crudo y Queso", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 87, nombre: "Sanguche de miga Queso y atun", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//base de queso
+        { id: 88, nombre: "Sanguche de miga Queso y huevo", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 89, nombre: "Sanguche de miga Queso y Tomate", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 90, nombre: "Sanguche de miga Queso y Berenjena", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 91, nombre: "Sanguche de miga Queso y choclo", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 92, nombre: "Sanguche de miga Queso y Pickles", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 93, nombre: "Sanguche de miga Queso y aceituna", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
+        { id: 94, nombre: "Sanguche de miga Queso y morron", categoria: "salado", subcategoria: "sanguche de miga", stock: 100, precio: 100 },//
         //sanguche de miga
     
         { id: 95, nombre: "Bizcochitos de grasa", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 100 },
@@ -123,8 +123,8 @@ let productos = [
         { id: 106, nombre: "Galletitas de semola", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 100 },
         //galletitas
     
-        { id: 107, nombre: "Tarta de Jamon y Queso", categoria: "salado", subcategoria: "tarta", stock: 100, precio: 100 },
-        { id: 108, nombre: "Tarta de Acelga", categoria: "salado", subcategoria: "tarta", stock: 100, precio: 100 },
+        { id: 107, nombre: "Tarta de Jamon y Queso", categoria: "salado", subcategoria: "tarta salada", stock: 100, precio: 100 },
+        { id: 108, nombre: "Tarta de Acelga", categoria: "salado", subcategoria: "tarta salada", stock: 100, precio: 100 },
         //tartas
     */
     { id: 109, nombre: "Sanguche de carne", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 100 },
@@ -150,43 +150,76 @@ let productos = [
 ]
 
 let carrito = []
-/*
-//Filtro
-let categoriaIngresada = prompt("Que tipo de producto esta buscando? \n salado \n dulce \n sanguche de miga \n panaderia").toLowerCase()
-let productosFiltrados = filtro(productos, "categoria")
+let opcion1
+let opcion2
 
-function filtro(lista, propiedad) {
-    return lista.filter(el => el[propiedad].toLowerCase() === categoriaIngresada)
+function menu() {
+    do {
+        opcion1 = Number(prompt("ingrese una opcion \n 1-Ver listado de productos completo \n 2-filtrar productos por categoria\n 0-Finalizar compra"))
+        if (opcion1 == 1) {
+            agregarProductoCarrito(productos, carrito)
+        } else if (opcion1 == 2) {
+            filtrar(productos)
+        }
+
+    } while (opcion1!==0);
 }
-console.log(productosFiltrados);*/
+
+//Filtro
+function filtrar(productos) {
+    let pedido = prompt("Ingrese categoria \n Factura \n Tarta \n Torta \n Alfajor \n Masitas \n Budin \n Pan dulce \n Pan \n Sanguche de miga \n Galletitas \n Tarta salada \n Sanguche \n Prepizza \n Chipa").toLowerCase()
+    let productosFiltrados = productos.filter(producto =>producto.subcategoria === pedido)
+    alert(listar(productosFiltrados, "id", "nombre", "precio"))
+}
+
+
+
+
+
+
+
+
+
+//Agregar al carrito
+function agregarProductoCarrito(productos, carrito) {
+    do {
+        opcion2 = Number(prompt("Elija el producto a agregar" + "\n" + listar(productos, "id", "nombre", "precio")))
+        let productoBuscado = productos.find(producto => producto.id === opcion2)
+        let productoEnCarrito = carrito.findIndex(producto => producto.id === opcion2)
+        if (productoBuscado) {
+            if (productoEnCarrito !== -1) {
+                carrito[productoEnCarrito].unidades++
+                carrito[productoEnCarrito].subtotal = carrito[productoEnCarrito].precio * carrito[productoEnCarrito].unidades
+            } else {
+                carrito.push({
+                    id: productoBuscado.id,
+                    nombre: productoBuscado.nombre,
+                    precio: productoBuscado.precio,
+                    unidades: 1,
+                    subtotal: productoBuscado.precio
+                })
+            }
+        } else if (opcion2 !== 0) {
+            alert("Id no valido")
+        }
+    } while (opcion2 !== 0);
+}
+
+
+
+console.log(carrito);
+
+menu()
 
 //listado de productos
 function listar(lista, propiedad, propiedad1, propiedad2) {
     return lista.map(producto => producto[propiedad] + ": " + producto[propiedad1] + " - " + producto[propiedad2]).join("\n")
 }
 
-let opcion
-do {
-    opcion = Number(prompt("Elija el producto" + "\n" + listar(productos, "id", "nombre", "precio")))
-    let productoBuscado = productos.find(producto => producto.id === opcion)
-    let productoEnCarrito = carrito.findIndex(producto => producto.id === opcion)
 
-    if (productoBuscado) {
-        if (productoEnCarrito !== -1) {
-            carrito[productoEnCarrito].unidades++
-            carrito[productoEnCarrito].subtotal = carrito[productoEnCarrito].precio * carrito[productoEnCarrito].unidades
-        } else {
-            carrito.push({
-                id: productoBuscado.id,
-                nombre: productoBuscado.nombre,
-                precio: productoBuscado.precio,
-                unidades: 1,
-                subtotal: productoBuscado.precio
-            })
-        }
-    }
-    console.log(carrito);
-} while (opcion !== 0);
+
+
+
 
 
 /*
