@@ -149,6 +149,7 @@ let productos = [
     //otros
 ]
 
+let carrito = []
 /*
 //Filtro
 let categoriaIngresada = prompt("Que tipo de producto esta buscando? \n salado \n dulce \n sanguche de miga \n panaderia").toLowerCase()
@@ -157,8 +158,38 @@ let productosFiltrados = filtro(productos, "categoria")
 function filtro(lista, propiedad) {
     return lista.filter(el => el[propiedad].toLowerCase() === categoriaIngresada)
 }
-console.log(productosFiltrados);
+console.log(productosFiltrados);*/
 
+//listado de productos
+function listar(lista, propiedad, propiedad1, propiedad2) {
+    return lista.map(producto => producto[propiedad] + ": " + producto[propiedad1] + " - " + producto[propiedad2]).join("\n")
+}
+
+let opcion
+do {
+    opcion = Number(prompt("Elija el producto" + "\n" + listar(productos, "id", "nombre", "precio")))
+    let productoBuscado = productos.find(producto => producto.id === opcion)
+    let productoEnCarrito = carrito.findIndex(producto => producto.id === opcion)
+
+    if (productoBuscado) {
+        if (productoEnCarrito !== -1) {
+            carrito[productoEnCarrito].unidades++
+            carrito[productoEnCarrito].subtotal = carrito[productoEnCarrito].precio * carrito[productoEnCarrito].unidades
+        } else {
+            carrito.push({
+                id: productoBuscado.id,
+                nombre: productoBuscado.nombre,
+                precio: productoBuscado.precio,
+                unidades: 1,
+                subtotal: productoBuscado.precio
+            })
+        }
+    }
+    console.log(carrito);
+} while (opcion !== 0);
+
+
+/*
 //ordenar por nombre
 function ordenar(lista, propiedad, descendente) {
     lista.sort((a, b) => {
@@ -175,36 +206,3 @@ function ordenar(lista, propiedad, descendente) {
     }
 }
 ordenar(productos, "nombre", false)*/
-
-//listado de productos
-function listar(lista, propiedad, propiedad1, propiedad2) {
-    return lista.map(producto => producto[propiedad] + ": " + producto[propiedad1] + " - " + producto[propiedad2]).join("\n")
-}
-
-//function agregarCarrito() {
-let carrito = []
-let opcion
-do {
-    opcion = Number(prompt("Elija el producto" + "\n" + listar(productos, "id", "nombre", "precio")))
-    let productoBuscado = productos.find(producto => producto.id === opcion)
-    let productoCarrito = carrito.findIndex(producto => producto.id === opcion)
-
-    console.log(productoBuscado);
-
-    if (productoCarrito !== -1) {
-        carrito[productoCarrito].unidades++
-        carrito[productoCarrito].subtotal = carrito[productoCarrito].subtotal * carrito[productoCarrito].unidades++
-    } else {
-        carrito.push({
-            id: productoBuscado.id,
-            nombre: productoBuscado.nombre,
-            precio: productoBuscado.precio,
-            unidades: 1,
-            subtotal: productoBuscado.precio
-        })
-    }
-
-    console.log(carrito);
-} while (opcion !== 0);
-//}
-//agregarCarrito()
