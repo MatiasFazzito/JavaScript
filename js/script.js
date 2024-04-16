@@ -170,7 +170,7 @@ function principal() {
 
 //Filtro ok
 function filtrar(productos, carrito) {
-    let pedido = prompt("Ingrese categoria (0 - para volver al menu anterior) \n Factura - Tarta - Torta - Alfajor - Masitas - Budin - Pan dulce \n Pan - Sanguche de miga - Galletitas - Tarta salada \n Sanguche - Prepizza - Chipa").toLowerCase()
+    let pedido = prompt("Ingrese categoria\n Factura - Tarta - Torta - Alfajor - Masitas - Budin - Pan dulce \n Pan - Sanguche de miga - Galletitas - Tarta salada \n Sanguche - Prepizza - Chipa").toLowerCase()
     let validacion = productos.find(el => el.subcategoria === pedido)
     let productosFiltrados = productos.filter(el => el.subcategoria === pedido)
     if (validacion) {
