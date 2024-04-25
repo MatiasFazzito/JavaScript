@@ -2,7 +2,7 @@ principal()
 
 //Menu de opciones
 function principal() {
-    let productos = [
+    let listadoProductos = [
         { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266 },
         { id: 2, nombre: "Medialuna de manteca", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266 },
         { id: 3, nombre: "Tortita negra", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266 },
@@ -154,7 +154,11 @@ function principal() {
     ]
 
     let carrito = []
-    let opcion
+
+    tarjetaDeProducto(listadoProductos)
+
+
+    /*let opcion
     do {
         opcion = Number(prompt("Ingrese una opcion \n 1 - Ver listado de productos completo \n 2 - filtrar productos por categoria\n 0- Finalizar compra\n Su compra lleva acumulado: $" + carrito.reduce((acum, producto) => acum + producto.subtotal, 0)))
         if (opcion == 1) {
@@ -165,9 +169,9 @@ function principal() {
             alert("Opcion no valida")
         }
     } while (opcion !== 0);
-    alert("Valor total de la compra: $" + carrito.reduce((acum, el) => acum + el.subtotal, 0) + "\nSu carrito:\n" + listar(carrito, "id", "nombre", "unidades") + "\nGracias por elegirnos")
+    alert("Valor total de la compra: $" + carrito.reduce((acum, el) => acum + el.subtotal, 0) + "\nSu carrito:\n" + listar(carrito, "id", "nombre", "unidades") + "\nGracias por elegirnos")*/
 }
-
+/*
 //Filtro ok
 function filtrar(productos, carrito) {
     let pedido = prompt("Ingrese categoria\n Factura - Tarta - Torta - Alfajor - Masitas - Budin - Pan dulce \n Pan - Sanguche de miga - Galletitas - Tarta salada \n Sanguche - Prepizza - Chipa").toLowerCase()
@@ -208,4 +212,25 @@ function agregarProductoCarrito(productos, carrito) {
 //listado de productos ok
 function listar(listado, propiedad, propiedad1, propiedad2) {
     return listado.map(el => el[propiedad] + ": " + el[propiedad1] + " - " + el[propiedad2]).join("\n")
+}*/
+
+
+
+
+function tarjetaDeProducto(productos) {
+
+    let contenedorProductos = document.getElementById("objetos")
+
+    productos.forEach(el => {
+        let tarjetaProducto = document.createElement("div")
+        tarjetaProducto.className = "productos"
+        tarjetaProducto.innerHTML = `
+        <h2>${el.nombre}</h2>
+        <img src=./multi/${el.rutaimg} />
+        <h3>Precio: ${el.precio} </h3>
+        <p>Stock: ${el.stock} </p>
+        <button>Agregar al carrito</button>
+        `
+        contenedorProductos.appendChild(tarjetaProducto)
+    });
 }

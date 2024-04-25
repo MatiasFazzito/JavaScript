@@ -48,14 +48,29 @@ body main .pedido {
 body main .pedido h1 {
   text-align: center;
 }
-body main .pedido .store {
+body main .pedido .filters {
   height: 700px;
 }
-body main .pedido .store .filtros {
+body main .pedido .filters .filtros {
   background-color: #FAEDCD;
 }
-body main .pedido .store .objetos {
-  background-color: black;
+body main .pedido #objetos {
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  overflow-y: scroll;
+}
+body main .pedido #objetos .productos {
+  max-width: 200px;
+  border: 2px solid black;
+  border-radius: 10%;
+  margin: 1%;
+  padding: 1%;
+}
+body main .pedido #objetos .productos img {
+  width: 200px;
+  margin: 1%;
+  padding: 0;
 }
 body main .productos {
   margin: 0;

@@ -58,13 +58,26 @@ body {
             h1{
                 text-align: center;
             }
-            .store{
+            .filters{
                 height: 700px;
                 .filtros{
                     background-color: $fondo; 
                 }
-                .objetos{
-                    background-color: black;
+            }
+            #objetos{
+                display: flex;
+                flex-wrap: wrap;
+                height: 700px;
+                overflow-y: scroll;
+                .productos{
+                    max-width: 200px;
+                    border: 2px solid black;
+                    border-radius: 10%;
+                    @include espaciado (1%, 1%);
+                    img{
+                        width: 200px;
+                        @include espaciado (1%, 0);
+                    }
                 }
             }
         }
