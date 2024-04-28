@@ -15,6 +15,7 @@ body {
     font-weight: bold;
 
     header {
+        border-bottom: 2px solid black;
         .logo {
             height: 90px;
         }
@@ -55,30 +56,50 @@ body {
         .pedido {
             @include espaciado (1%, 2%);
             background-color: $fondo2;
-            h1{
+
+            h1 {
                 text-align: center;
             }
-            .filters{
+
+            .store {
                 height: 700px;
-                .filtros{
-                    background-color: $fondo; 
+
+                #filtros {
+                    background-color: $fondo;
+                    .titulo{
+                        font-size: 1.5rem;
+                        @include espaciado (3%, 0);
+                        text-align: center;
+                        text-decoration: underline;
+                    }
+                    .botonFiltro{
+                        width: 100%;
+                        height: 6%;
+                        font-size: 1rem;
+                        border: none;
+                        background-color: transparent;
+
+                    }
                 }
-            }
-            #objetos{
-                display: flex;
-                flex-wrap: wrap;
-                height: 700px;
-                overflow-y: scroll;
-                .productos{
-                    width: 300px;
-                    border: 2px solid black;
-                    border-radius: 10%;
-                    font-size: 1rem;
-                    background-color: $tarjeta;
-                    @include espaciado (1%, 1%);
-                    img{
-                        width: 200px;
-                        @include espaciado (1%, 0);
+
+                #objetos {
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 700px;
+                    overflow-y: scroll;
+
+                    .productos {
+                        width: 300px;
+                        border: 2px solid black;
+                        border-radius: 10%;
+                        font-size: 1rem;
+                        background-color: $tarjeta;
+                        @include espaciado (1%, 1%);
+
+                        img {
+                            width: 200px;
+                            @include espaciado (1%, 0);
+                        }
                     }
                 }
             }

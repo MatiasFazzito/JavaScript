@@ -11,6 +11,9 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+body header {
+  border-bottom: 2px solid black;
+}
 body header .logo {
   height: 90px;
 }
@@ -48,28 +51,42 @@ body main .pedido {
 body main .pedido h1 {
   text-align: center;
 }
-body main .pedido .filters {
+body main .pedido .store {
   height: 700px;
 }
-body main .pedido .filters .filtros {
+body main .pedido .store #filtros {
   background-color: #FAEDCD;
 }
-body main .pedido #objetos {
+body main .pedido .store #filtros .titulo {
+  font-size: 1.5rem;
+  margin: 3%;
+  padding: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+body main .pedido .store #filtros .botonFiltro {
+  width: 100%;
+  height: 6%;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+}
+body main .pedido .store #objetos {
   display: flex;
   flex-wrap: wrap;
   height: 700px;
   overflow-y: scroll;
 }
-body main .pedido #objetos .productos {
+body main .pedido .store #objetos .productos {
   width: 300px;
   border: 2px solid black;
   border-radius: 10%;
   font-size: 1rem;
-  background-color: wheat;
+  background-color: #f5deb3;
   margin: 1%;
   padding: 1%;
 }
-body main .pedido #objetos .productos img {
+body main .pedido .store #objetos .productos img {
   width: 200px;
   margin: 1%;
   padding: 0;
