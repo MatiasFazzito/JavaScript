@@ -51,33 +51,44 @@ body main .pedido {
 body main .pedido h1 {
   text-align: center;
 }
-body main .pedido .store {
-  height: 700px;
+body main .pedido #store {
+  min-height: 750px;
 }
-body main .pedido .store #filtros {
+body main .pedido #store .oculto {
+  display: none;
+}
+body main .pedido #store #filtros {
   background-color: #FAEDCD;
 }
-body main .pedido .store #filtros .titulo {
+body main .pedido #store #filtros .titulo {
   font-size: 1.5rem;
   margin: 3%;
   padding: 0;
   text-align: center;
   text-decoration: underline;
 }
-body main .pedido .store #filtros .botonFiltro {
+body main .pedido #store #filtros .titulo .botonCarrito {
+  width: 100%;
+  height: 6%;
+  font-size: 1rem;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+}
+body main .pedido #store #filtros .botonFiltro {
   width: 100%;
   height: 6%;
   font-size: 1rem;
   border: none;
   background-color: transparent;
 }
-body main .pedido .store #objetos {
+body main .pedido #store #objetos {
   display: flex;
   flex-wrap: wrap;
-  height: 700px;
+  height: 750px;
   overflow-y: scroll;
 }
-body main .pedido .store #objetos .productos {
+body main .pedido #store #objetos .productos {
   width: 300px;
   border: 2px solid black;
   border-radius: 10%;
@@ -86,10 +97,32 @@ body main .pedido .store #objetos .productos {
   margin: 1%;
   padding: 1%;
 }
-body main .pedido .store #objetos .productos img {
+body main .pedido #store #objetos .productos img {
   width: 200px;
+  height: 110px;
   margin: 1%;
   padding: 0;
+}
+body main .pedido #store #contenedorCarrito .tituloCarrito {
+  font-size: 1.5rem;
+  margin: 3%;
+  padding: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+body main .pedido #store #contenedorCarrito #objetosCarrito {
+  display: flex;
+  height: 400px;
+  overflow-y: scroll;
+}
+body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito {
+  display: flex;
+  flex-wrap: wrap;
+  height: 3rem;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 1rem;
+  background-color: #f5deb3;
 }
 body main .productos {
   margin: 0;

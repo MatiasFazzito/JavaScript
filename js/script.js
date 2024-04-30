@@ -1,6 +1,5 @@
 principal()
 
-//Menu de opciones
 function principal() {
     let listadoProductos = [
         { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "medialuna_grasa.jpg" },
@@ -16,7 +15,7 @@ function principal() {
         { id: 11, nombre: "Bola de fraile rellena de DDL", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "bola_de_fraile_ddl.jpg" },
         { id: 12, nombre: "Bola de fraile rellena de crema", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "bola_de_fraile_pastelera.jpg" },
         { id: 13, nombre: "Donas", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "donas.jpg" },
-        { id: 14, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "budin_choco.jpg" },
+        { id: 14, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "budin_chocolate.jpg" },
         { id: 15, nombre: "Churro", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "churro.jpg" },
         { id: 16, nombre: "Churro relleno", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "churro_relleno.jpg" },
         { id: 17, nombre: "Cañoncitos", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "canoncitos.jpg" },
@@ -42,44 +41,44 @@ function principal() {
         { id: 35, nombre: "Milhojas con dulce de leche", categoria: "dulce", subcategoria: "tarta", stock: 100, precio: 6000, rutaimg: "milhojas.jpg" },
         //tartas dulces
 
-        { id: 36, nombre: "Torta de DDL y crema", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "image-placeholder.png" },
-        { id: 37, nombre: "Torta de mousse de chocolate y DDL", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "image-placeholder.png" },
-        { id: 38, nombre: "Lemon pie", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "image-placeholder.png" },
+        { id: 36, nombre: "Torta de DDL y crema", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "torta_ddl.jpg" },
+        { id: 37, nombre: "Torta de mousse de chocolate y DDL", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "torta_ddl_chocolate.jpg" },
+        { id: 38, nombre: "Lemon pie", categoria: "dulce", subcategoria: "torta", stock: 100, precio: 8000, rutaimg: "lemon_pie.jpg" },
         //tortas
 
-        { id: 39, nombre: "Alfajores de maicena x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 40, nombre: "Alfajores de chocolate x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 41, nombre: "Alfajores de impalpable x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 42, nombre: "Copitos DDL x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 43, nombre: "Coquitos x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 44, nombre: "Rosquitas impalpable x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 45, nombre: "Rosquitas de chocolate x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 46, nombre: "Rosquitas de limon x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 47, nombre: "Rosquitas de naranja x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 48, nombre: "Pepas x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 49, nombre: "Mosaicos con membrillo x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 50, nombre: "Mosaicos con azucar negra x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 51, nombre: "Rosquitas combinadas x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 52, nombre: "Alfajores de chocolate gde", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 53, nombre: "Alfajores de maicena gde", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 54, nombre: "Alfajores de milhojas", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
+        { id: 39, nombre: "Alfajores de maicena x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajores_maicena.jpg" },
+        { id: 40, nombre: "Alfajores de chocolate x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajor_choco.jpg" },
+        { id: 41, nombre: "Alfajores de impalpable x250g", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajores_impalpable.jpg" },
+        { id: 42, nombre: "Copitos DDL x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "copitos_ddl.jpg" },
+        { id: 43, nombre: "Coquitos x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "coquitos_ddl.jpg" },
+        { id: 44, nombre: "Rosquitas impalpable x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "rosquitas_impalpable.jpg" },
+        { id: 45, nombre: "Rosquitas de chocolate x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "rosquitas_chocolate.jpg" },
+        { id: 46, nombre: "Rosquitas de limon x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "rosquitas_limon.jpg" },
+        { id: 47, nombre: "Rosquitas de naranja x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "rosquitas_naranja.jpg" },
+        { id: 48, nombre: "Pepas x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "pepas.jpg" },
+        { id: 49, nombre: "Mosaicos con membrillo x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "mosaicos_membrillo.jpg" },
+        { id: 50, nombre: "Mosaicos con azucar negra x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "mosaicos_azucar_negr.jpg" },
+        { id: 51, nombre: "Rosquitas combinadas x250g", categoria: "dulce", subcategoria: "masitas", stock: 100, precio: 1500, rutaimg: "rosquitas_chocolate.jpg" },
+        { id: 52, nombre: "Alfajores de chocolate gde", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajor_choco.jpg" },
+        { id: 53, nombre: "Alfajores de maicena gde", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajores_maicena.jpg" },
+        { id: 54, nombre: "Alfajores de milhojas", categoria: "dulce", subcategoria: "alfajor", stock: 100, precio: 1500, rutaimg: "alfajor_milhojas.jpg" },
         //masitas
 
-        { id: 55, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "image-placeholder.png" },
-        { id: 56, nombre: "Budin de vainilla", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "image-placeholder.png" },
-        { id: 57, nombre: "Budin de limon", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "image-placeholder.png" },
-        { id: 58, nombre: "Budin de naranja", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "image-placeholder.png" },
-        { id: 59, nombre: "Budin marmolado", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "image-placeholder.png" },
+        { id: 55, nombre: "Budin de chocolate", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "budin_choco.jpg" },
+        { id: 56, nombre: "Budin de vainilla", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "budin_vainilla.jpg" },
+        { id: 57, nombre: "Budin de limon", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "budin_limon.jpg" },
+        { id: 58, nombre: "Budin de naranja", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "budin_naranja.jpg" },
+        { id: 59, nombre: "Budin marmolado", categoria: "dulce", subcategoria: "budin", stock: 100, precio: 2500, rutaimg: "budin_marmolado.jpg" },
         //budines
 
-        { id: 60, nombre: "Pan dulce con frutos secos", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "image-placeholder.png" },
+        { id: 60, nombre: "Pan dulce con frutos secos", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "PD_frutos_secos.jpg" },
         { id: 61, nombre: "Pan dulce con fruta seca y abrillantada", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "image-placeholder.png" },
-        { id: 62, nombre: "Pan dulce madrileño", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "image-placeholder.png" },
-        { id: 63, nombre: "Rosca de pascua", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 7400, rutaimg: "image-placeholder.png" },
+        { id: 62, nombre: "Pan dulce madrileño", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "PD_madrileño.jpg" },
+        { id: 63, nombre: "Rosca de pascua", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 7400, rutaimg: "rosca_pascua.jpg" },
         //pan dulce
 
-        { id: 64, nombre: "Pan frances x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 65, nombre: "Miñon casero x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100, rutaimg: "image-placeholder.png" },
+        { id: 64, nombre: "Pan frances x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_frances.jpg" },
+        { id: 65, nombre: "Miñon casero x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100, rutaimg: "minon.jpg" },
         { id: 66, nombre: "Fonda x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
         { id: 67, nombre: "Flauta x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
         { id: 68, nombre: "Figacitas de manteca x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
@@ -152,78 +151,36 @@ function principal() {
         { id: 125, nombre: "Chipa x250g", categoria: "salado", subcategoria: "chipa", stock: 100, precio: 2400, rutaimg: "image-placeholder.png" },
         //otros
     ]
-
-
-
     let carrito = []
 
-    renderProduct(listadoProductos)
-    filtrado(listadoProductos)
+    let botonCarrito = document.getElementById("mostrarCarrito")
+    botonCarrito.addEventListener("click", verOcultarCarrito)
 
-
-
-    /*
-    let opcion
-    do {
-        opcion = Number(prompt("Ingrese una opcion \n 1 - Ver listado de productos completo \n 2 - filtrar productos por categoria\n 0- Finalizar compra\n Su compra lleva acumulado: $" + carrito.reduce((acum, producto) => acum + producto.subtotal, 0)))
-        if (opcion == 1) {
-            agregarProductoCarrito(productos, carrito)
-        } else if (opcion == 2) {
-            filtrar(productos, carrito)
-        } else if (opcion !== 0) {
-            alert("Opcion no valida")
-        }
-    } while (opcion !== 0);
-    alert("Valor total de la compra: $" + carrito.reduce((acum, el) => acum + el.subtotal, 0) + "\nSu carrito:\n" + listar(carrito, "id", "nombre", "unidades") + "\nGracias por elegirnos")*/
+    renderProduct(listadoProductos, carrito)
+    filters(listadoProductos)
+    renderCarrito(carrito)
 }
-/*
-//Filtro ok
-function filtrar(productos, carrito) {
-    let pedido = prompt("Ingrese categoria\n Factura - Tarta - Torta - Alfajor - Masitas - Budin - Pan dulce \n Pan - Sanguche de miga - Galletitas - Tarta salada \n Sanguche - Prepizza - Chipa").toLowerCase()
-    let validacion = productos.find(el => el.subcategoria === pedido)
-    let productosFiltrados = productos.filter(el => el.subcategoria === pedido)
-    if (validacion) {
-        agregarProductoCarrito(productosFiltrados, carrito)
-    } else {
-        alert("Categoria no encontrada")
+
+function filters(productos) {
+
+    let botonesFiltro = document.querySelectorAll(".botonFiltro")
+    botonesFiltro.forEach(boton => {
+        boton.addEventListener("click", () => filtrarProductos(productos, boton.value))
+    })
+
+    function filtrarProductos(productos, categoria) {
+        let productosMostrados = productos.filter(el => el.subcategoria === categoria)
+        if (productosMostrados != "") {
+            renderProduct(productosMostrados)
+        } else {
+            renderProduct(productos)
+        }
     }
 }
-//Agregar al carrito ok
-function agregarProductoCarrito(productos, carrito) {
-    let opcion
-    do {
-        opcion = Number(prompt("Elija el producto a agregar (Indique ID - 0 para volver al menu anterior)\n" + listar(productos, "id", "nombre", "precio")))
-        let productoBuscado = productos.find(el => el.id === opcion)
-        let productoEnCarrito = carrito.findIndex(el => el.id === opcion)
-        if (productoBuscado) {
-            if (productoEnCarrito !== -1) {
-                carrito[productoEnCarrito].unidades++
-                carrito[productoEnCarrito].subtotal = carrito[productoEnCarrito].precio * carrito[productoEnCarrito].unidades
-            } else {
-                carrito.push({
-                    id: productoBuscado.id,
-                    nombre: productoBuscado.nombre,
-                    precio: productoBuscado.precio,
-                    unidades: 1,
-                    subtotal: productoBuscado.precio
-                })
-            }
-            alert("Producto agregado al carrito")
-        } else if (opcion !== 0) {
-            alert("Id no valido")
-        }
-    } while (opcion !== 0);
-}
-//listado de productos ok
-function listar(listado, propiedad, propiedad1, propiedad2) {
-    return listado.map(el => el[propiedad] + ": " + el[propiedad1] + " - " + el[propiedad2]).join("\n")
-}*/
 
-//crear tarjetas de producto ok
-function renderProduct(productos) {
+function renderProduct(productos, carrito) {
 
     let contenedorProductos = document.getElementById("objetos")
-
     contenedorProductos.innerHTML = ""
 
     productos.forEach(el => {
@@ -234,27 +191,58 @@ function renderProduct(productos) {
         <img src="../multi/${el.rutaimg}"/>
         <h3>Precio: ${el.precio} </h3>
         <p>Stock: ${el.stock} </p>
-        <button id="agregarCarrito${el.id}">Agregar al carrito</button>
+        <button id="${el.id}">Agregar al carrito</button>
         `
         contenedorProductos.appendChild(tarjetaProducto)
+
+        let botonAdd = document.getElementById(`${el.id}`)
+        botonAdd.addEventListener("click", (boton) => agregarAlCarrito(boton, productos, carrito))
     })
 }
 
-//Filtrado
-function filtrado(productos) {
+function agregarAlCarrito(boton, productos, carrito) {
 
-    let botonesFiltro = document.querySelectorAll(".botonFiltro")
-    botonesFiltro.forEach(el => {
-        el.addEventListener("click", () => filtrarProductos(productos, el.value))
-    });
+    let productid = Number(boton.target.id)
 
-    function filtrarProductos(productos, categoria) {
-        let productosMostrados = productos.filter(el => el.subcategoria === categoria)
+    let productoEnCarrito = carrito.findIndex(el => el.id === productid)
+    let productoBuscado = productos.find(el => el.id === productid)
 
-        if (productosMostrados != "") {
-            renderProduct(productosMostrados)
-        } else {
-            renderProduct(productos)
-        }
+    if (productoEnCarrito !== -1) {
+        carrito[productoEnCarrito].unidades++
+        carrito[productoEnCarrito].subtotal = carrito[productoEnCarrito].precio * carrito[productoEnCarrito].unidades
+    } else {
+        carrito.push({
+            id: productoBuscado.id,
+            nombre: productoBuscado.nombre,
+            precio: productoBuscado.precio,
+            unidades: 1,
+            subtotal: productoBuscado.precio
+        })
     }
+    renderCarrito(carrito)
+}
+
+function renderCarrito(carrito) {
+    let contenedorCarrito = document.getElementById("objetosCarrito")
+    contenedorCarrito.innerHTML = ""
+
+    carrito.forEach(el => {
+        let tarjetaProductoCarrito = document.createElement("div")
+        tarjetaProductoCarrito.className = "productoEnCarrito"
+
+        tarjetaProductoCarrito.innerHTML = `
+            <h2>${el.nombre}</h2>
+            <h3>Precio unitario: ${el.precio}</h3>
+            <h4>Unidades: ${el.unidades}</h4>
+            <h4>Subtotal: ${el.subtotal}</h4>
+            <button id="eliminar${el.id}" > X </button>
+        `
+        contenedorCarrito.appendChild(tarjetaProductoCarrito)
+    })
+
+}
+
+function verOcultarCarrito() {
+    let contenedorCarrito = document.getElementById("contenedorCarrito")
+    contenedorCarrito.classList.toggle("oculto")
 }

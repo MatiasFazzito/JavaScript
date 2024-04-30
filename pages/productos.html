@@ -51,9 +51,10 @@
     <main>
         <section class="pedido">
             <h1 class="col">Realiza tu pedido</h1>
-            <article class="row store">
+            <article id="store" class="row">
                 <div id="filtros" class="col-2">
-                    <h2 class="titulo">Filtros</h2>
+                    <h2 class="titulo">Filtros <button id="mostrarCarrito" class="botonCarrito">Mostrar carrito</button></h2>
+                    <button class="botonFiltro">Eliminar filtros</button>
                     <button value="factura" class="botonFiltro">Factura</button>
                     <button value="tarta" class="botonFiltro">Tartas dulces</button>
                     <button value="torta" class="botonFiltro">Tortas</button>
@@ -68,10 +69,15 @@
                     <button value="sanguche" class="botonFiltro">Sanguches</button>
                     <button value="prepizza" class="botonFiltro">Prepizza</button>
                     <button value="chipa" class="botonFiltro">Chipa</button>
-                    <button class="botonFiltro">Eliminar filtros</button>
                 </div>
                 <div id="objetos" class="col-10">
                     <!--Tarjetas de producto en JS-->
+                </div>
+                <div id="contenedorCarrito" class="oculto col">
+                    <h1 class="tituloCarrito">Carrito</h1>
+                    <div id="objetosCarrito" class="row">
+                        <!--Tarjetas de carrito en JS-->
+                    </div>
                 </div>
             </article>
         </section>

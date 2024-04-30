@@ -16,6 +16,7 @@ body {
 
     header {
         border-bottom: 2px solid black;
+
         .logo {
             height: 90px;
         }
@@ -61,18 +62,33 @@ body {
                 text-align: center;
             }
 
-            .store {
-                height: 700px;
+            #store {
+                min-height: 750px;
+
+                .oculto{
+                    display: none;
+                }
 
                 #filtros {
                     background-color: $fondo;
-                    .titulo{
+
+                    .titulo {
                         font-size: 1.5rem;
                         @include espaciado (3%, 0);
                         text-align: center;
                         text-decoration: underline;
+
+                        .botonCarrito {
+                            width: 100%;
+                            height: 6%;
+                            font-size: 1rem;
+                            border: none;
+                            text-decoration: underline;
+                            background-color: transparent;
+                        }
                     }
-                    .botonFiltro{
+
+                    .botonFiltro {
                         width: 100%;
                         height: 6%;
                         font-size: 1rem;
@@ -85,7 +101,7 @@ body {
                 #objetos {
                     display: flex;
                     flex-wrap: wrap;
-                    height: 700px;
+                    height: 750px;
                     overflow-y: scroll;
 
                     .productos {
@@ -98,10 +114,38 @@ body {
 
                         img {
                             width: 200px;
+                            height: 110px;
                             @include espaciado (1%, 0);
                         }
                     }
                 }
+
+                #contenedorCarrito{
+
+                    .tituloCarrito{
+                        font-size: 1.5rem;
+                        @include espaciado (3%, 0);
+                        text-align: center;
+                        text-decoration: underline;
+                    }
+
+                    #objetosCarrito {
+                        display: flex;
+                        height: 400px;
+                        overflow-y: scroll;
+
+                        .productoEnCarrito {
+                            display: flex;
+                            flex-wrap: wrap;
+                            height: 3rem;
+                            width: 100%;
+                            border: 2px solid black;
+                            font-size: 1rem;
+                            background-color: $tarjeta;
+                        }
+                    }
+                }
+                
             }
         }
 
