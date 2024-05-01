@@ -1,5 +1,3 @@
-principal()
-
 function principal() {
     let listadoProductos = [
         { id: 1, nombre: "Medialuna de grasa", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "medialuna_grasa.jpg" },
@@ -79,86 +77,88 @@ function principal() {
 
         { id: 64, nombre: "Pan frances x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_frances.jpg" },
         { id: 65, nombre: "Miñon casero x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100, rutaimg: "minon.jpg" },
-        { id: 66, nombre: "Fonda x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 67, nombre: "Flauta x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 68, nombre: "Figacitas de manteca x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 69, nombre: "Figasa comun x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 70, nombre: "Pan integral x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 71, nombre: "Pan integral sin sal x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 72, nombre: "Pebete x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 73, nombre: "Pebete integral x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 74, nombre: "Pan arabe x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 75, nombre: "Pan de hamburguesa x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 76, nombre: "Pan de pancho x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
+        { id: 66, nombre: "Fonda x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_fonda.jpg" },
+        { id: 67, nombre: "Flauta x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_flauta.jpg" },
+        { id: 68, nombre: "Figacitas de manteca x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "figacitas_manteca.jpg" },
+        { id: 69, nombre: "Figasa comun x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "figasa_comun.jpg" },
+        { id: 70, nombre: "Pan integral x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_integral.jpg" },
+        { id: 71, nombre: "Pan integral sin sal x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_integral.jpg" },
+        { id: 72, nombre: "Pebete x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pebete.jpg" },
+        { id: 73, nombre: "Pebete integral x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pebete_integral.jpg" },
+        { id: 74, nombre: "Pan arabe x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_arabe.jpg" },
+        { id: 75, nombre: "Pan de hamburguesa x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_hamburguesa.jpg" },
+        { id: 76, nombre: "Pan de pancho x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_pancho.jpg" },
         //pan
 
-        { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },//comun
-        { id: 78, nombre: "Sanguche de miga Jamon y Tomate", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },//comun
-        { id: 79, nombre: "Sanguche de miga Jamon y Huevo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },//comun
-        { id: 80, nombre: "Sanguche de miga Jamon y Lechuga", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },//comun
-        { id: 81, nombre: "Sanguche de miga Jamon y Aceituna", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },//comun
-        { id: 82, nombre: "Sanguche de miga Jamon y Atun", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//especial
-        { id: 83, nombre: "Sanguche de miga Jamon y Palmito", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//especial
-        { id: 84, nombre: "Sanguche de miga Jamon y Roquefort", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//especial
-        { id: 85, nombre: "Sanguche de miga Jamon y Anana", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//especial
-        { id: 86, nombre: "Sanguche de miga Crudo y Queso", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//especial
-        { id: 87, nombre: "Sanguche de miga Queso y atun", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 88, nombre: "Sanguche de miga Queso y huevo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 89, nombre: "Sanguche de miga Queso y Tomate", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 90, nombre: "Sanguche de miga Queso y Berenjena", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 91, nombre: "Sanguche de miga Queso y choclo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 92, nombre: "Sanguche de miga Queso y Pickles", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 93, nombre: "Sanguche de miga Queso y aceituna", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
-        { id: 94, nombre: "Sanguche de miga Queso y morron", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "image-placeholder.png" },//base de queso
+        { id: 77, nombre: "Sanguche de miga Jamon y Queso", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "sanguche_miga_JyQ.jpg" },//comun
+        { id: 78, nombre: "Sanguche de miga Jamon y Tomate", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "sanguche_miga_JyT.jpg" },//comun
+        { id: 79, nombre: "Sanguche de miga Jamon y Huevo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "sanguche_miga_JyH.jpg" },//comun
+        { id: 80, nombre: "Sanguche de miga Jamon y Lechuga", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "sanguche_miga_JyL.jpg" },//comun
+        { id: 81, nombre: "Sanguche de miga Jamon y Aceituna", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 600, rutaimg: "sanguche_miga_JyA.jpg" },//comun
+        { id: 82, nombre: "Sanguche de miga Jamon y Atun", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_JyAtun.jpg" },//especial
+        { id: 83, nombre: "Sanguche de miga Jamon y Palmito", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_JyP.jpg" },//especial
+        { id: 84, nombre: "Sanguche de miga Jamon y Roquefort", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_JyR.jpg" },//especial
+        { id: 85, nombre: "Sanguche de miga Jamon y Anana", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_JyAnana.jpg" },//especial
+        { id: 86, nombre: "Sanguche de miga Crudo y Queso", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_CyQ.jpg" },//especial
+        { id: 87, nombre: "Sanguche de miga Queso y atun", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyA.jpg" },//base de queso
+        { id: 88, nombre: "Sanguche de miga Queso y huevo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyH.jpg" },//base de queso
+        { id: 89, nombre: "Sanguche de miga Queso y Tomate", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyT.jpg" },//base de queso
+        { id: 90, nombre: "Sanguche de miga Queso y Berenjena", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyB.jpg" },//base de queso
+        { id: 91, nombre: "Sanguche de miga Queso y choclo", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyC.jpg" },//base de queso
+        { id: 92, nombre: "Sanguche de miga Queso y Pickles", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyP.jpg" },//base de queso
+        { id: 93, nombre: "Sanguche de miga Queso y aceituna", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyAceituna.jpg" },//base de queso
+        { id: 94, nombre: "Sanguche de miga Queso y morron", categoria: "salado", subcategoria: "sangucheDeMiga", stock: 100, precio: 800, rutaimg: "sanguche_miga_QyM.jpg" },//base de queso
         //sanguche de miga
 
-        { id: 95, nombre: "Bizcochitos de grasa x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 96, nombre: "Cuernitos x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 97, nombre: "Voladoras x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 98, nombre: "Grisines x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 99, nombre: "Grisines de salvado x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 100, nombre: "Rosquita de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 101, nombre: "Coquito de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 102, nombre: "Palitos de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 103, nombre: "Galletitas sin sal x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 104, nombre: "Marineras x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 105, nombre: "Galletitas de salvado x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 106, nombre: "Galletitas de semola x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
+        { id: 95, nombre: "Bizcochitos de grasa x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "bizcochitos_grasa.jpg" },
+        { id: 96, nombre: "Cuernitos x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "cuernitos.jpg" },
+        { id: 97, nombre: "Voladoras x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "voladoras.jpg" },
+        { id: 98, nombre: "Grisines x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "grisines.jpg" },
+        { id: 99, nombre: "Grisines de salvado x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "grisines_salvado.jpg" },
+        { id: 100, nombre: "Rosquita de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "grisines_salvado.jpg" },
+        { id: 101, nombre: "Coquito de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "coquitos_anis.jpg" },
+        { id: 102, nombre: "Palitos de anis x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "palitos_anis.jpg" },
+        { id: 103, nombre: "Galletitas sin sal x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "galletitas_sin_sal.jpg" },
+        { id: 104, nombre: "Marineras x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "marineras.jpg" },
+        { id: 105, nombre: "Galletitas de salvado x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "galletitas_salvado.jpg" },
+        { id: 106, nombre: "Galletitas de semola x250g", categoria: "salado", subcategoria: "galletitas", stock: 100, precio: 1500, rutaimg: "galletitas_semola.jpg" },
         //galletitas
 
-        { id: 107, nombre: "Tarta de Jamon y Queso x porcion", categoria: "salado", subcategoria: "tartaSalada", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 108, nombre: "Tarta de Acelga x porcion", categoria: "salado", subcategoria: "tartaSalada", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
+        { id: 107, nombre: "Tarta de Jamon y Queso x porcion", categoria: "salado", subcategoria: "tartaSalada", stock: 100, precio: 1500, rutaimg: "tarta_JyQ.jpg" },
+        { id: 108, nombre: "Tarta de Acelga x porcion", categoria: "salado", subcategoria: "tartaSalada", stock: 100, precio: 1500, rutaimg: "tarta_acelga.jpg" },
         //tartas
 
-        { id: 109, nombre: "Sanguche de carne", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 110, nombre: "Sanguche de pollo", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 111, nombre: "Sanguche de milanesa", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 112, nombre: "Hamburguesa", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "image-placeholder.png" },
-        { id: 113, nombre: "Sanguches de fiambre", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //flauta pebete figaza //jyq salame y queso cantimpalo y queso matambrede pollo y queso crudo y queso pastron y queso
-        { id: 114, nombre: "Medialunas de Jamon y Queso", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },
-        { id: 115, nombre: "Pletzale", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //jyq pastron y pepino
-        { id: 116, nombre: "Locateli", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //roque y queso queso y tomate
-        { id: 117, nombre: "Fosforito de Jamon y Queso", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },
-        { id: 118, nombre: "Chips", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //jyq matambre y queso matambre y tomate
-        { id: 119, nombre: "Sacramento", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //salame y queso matambre y queso cantimpalo y queso
-        { id: 120, nombre: "Salvado", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" }, //crudo y queso crudo y tomate
-        { id: 121, nombre: "Arabe completo", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },
-        { id: 122, nombre: "Arabe de atun", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "image-placeholder.png" },
+        { id: 109, nombre: "Sanguche de carne", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "sanguche_carne.jpg" },
+        { id: 110, nombre: "Sanguche de pollo", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "sanguche_pollo.jpg" },
+        { id: 111, nombre: "Sanguche de milanesa", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "sanguche_milanesa.jpg" },
+        { id: 112, nombre: "Hamburguesa", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 2200, rutaimg: "hamburguesa.jpg" },
+        { id: 113, nombre: "Sanguches de fiambre", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "sanguche_fiambre.jpg" }, //flauta pebete figaza //jyq salame y queso cantimpalo y queso matambrede pollo y queso crudo y queso pastron y queso
+        { id: 114, nombre: "Medialunas de Jamon y Queso", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "medialuna_JyQ.jpg" },
+        { id: 115, nombre: "Pletzale", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "pletsale.jpg" }, //jyq pastron y pepino
+        { id: 116, nombre: "Locateli", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "locateli.jpg" }, //roque y queso queso y tomate
+        { id: 117, nombre: "Fosforito de Jamon y Queso", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "fosforito_JyQ.jpg" },
+        { id: 118, nombre: "Chips", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "chips.jpg" }, //jyq matambre y queso matambre y tomate
+        { id: 119, nombre: "Sacramento", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "sacramento.jpg" }, //salame y queso matambre y queso cantimpalo y queso
+        { id: 120, nombre: "Salvado", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "salvado.jpg" }, //crudo y queso crudo y tomate
+        { id: 121, nombre: "Arabe completo", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "arabe_completo.jpg" },
+        { id: 122, nombre: "Arabe de atun", categoria: "salado", subcategoria: "sanguche", stock: 100, precio: 600, rutaimg: "arabe_atun.jpg" },
         //sanguches
 
-        { id: 123, nombre: "Prepizza de Tomate", categoria: "salado", subcategoria: "prepizza", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 124, nombre: "Prepizza de Cebolla", categoria: "salado", subcategoria: "prepizza", stock: 100, precio: 1500, rutaimg: "image-placeholder.png" },
-        { id: 125, nombre: "Chipa x250g", categoria: "salado", subcategoria: "chipa", stock: 100, precio: 2400, rutaimg: "image-placeholder.png" },
+        { id: 123, nombre: "Prepizza de Tomate", categoria: "salado", subcategoria: "prepizza", stock: 100, precio: 1500, rutaimg: "prepizza_tomate.jpg" },
+        { id: 124, nombre: "Prepizza de Cebolla", categoria: "salado", subcategoria: "prepizza", stock: 100, precio: 1500, rutaimg: "prepizza_cebolla.jpg" },
+        { id: 125, nombre: "Chipa x250g", categoria: "salado", subcategoria: "chipa", stock: 100, precio: 2400, rutaimg: "chipa.jpg" }
         //otros
     ]
-    let carrito = []
 
     let botonCarrito = document.getElementById("mostrarCarrito")
     botonCarrito.addEventListener("click", verOcultarCarrito)
 
-    renderProduct(listadoProductos, carrito)
+    let botonCompra = document.getElementById("finalizarCompra")
+    botonCompra.addEventListener("click", finalizarCompra)
+
+    renderProduct(listadoProductos)
     filters(listadoProductos)
-    renderCarrito(carrito)
+    renderCarrito()
 }
 
 function filters(productos) {
@@ -170,15 +170,12 @@ function filters(productos) {
 
     function filtrarProductos(productos, categoria) {
         let productosMostrados = productos.filter(el => el.subcategoria === categoria)
-        if (productosMostrados != "") {
-            renderProduct(productosMostrados)
-        } else {
-            renderProduct(productos)
-        }
+
+        productosMostrados !="" ? renderProduct(productosMostrados) : renderProduct(productos)
     }
 }
 
-function renderProduct(productos, carrito) {
+function renderProduct(productos) {
 
     let contenedorProductos = document.getElementById("objetos")
     contenedorProductos.innerHTML = ""
@@ -196,11 +193,13 @@ function renderProduct(productos, carrito) {
         contenedorProductos.appendChild(tarjetaProducto)
 
         let botonAdd = document.getElementById(`${el.id}`)
-        botonAdd.addEventListener("click", (boton) => agregarAlCarrito(boton, productos, carrito))
+        botonAdd.addEventListener("click", (boton) => agregarAlCarrito(boton, productos))
     })
 }
 
-function agregarAlCarrito(boton, productos, carrito) {
+function agregarAlCarrito(boton, productos) {
+
+    let carrito = getCarritoLS()
 
     let productid = Number(boton.target.id)
 
@@ -219,10 +218,15 @@ function agregarAlCarrito(boton, productos, carrito) {
             subtotal: productoBuscado.precio
         })
     }
-    renderCarrito(carrito)
+
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    renderCarrito()
 }
 
-function renderCarrito(carrito) {
+function renderCarrito() {
+
+    let carrito = getCarritoLS()
+
     let contenedorCarrito = document.getElementById("objetosCarrito")
     contenedorCarrito.innerHTML = ""
 
@@ -246,3 +250,13 @@ function verOcultarCarrito() {
     let contenedorCarrito = document.getElementById("contenedorCarrito")
     contenedorCarrito.classList.toggle("oculto")
 }
+
+function finalizarCompra() {
+    localStorage.removeItem("carrito")
+    renderCarrito([])
+    alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local!")
+}
+
+const getCarritoLS = ()=> JSON.parse(localStorage.getItem("carrito")) || []
+
+principal()
