@@ -50,6 +50,7 @@ body main .pedido {
 }
 body main .pedido h1 {
   text-align: center;
+  text-decoration: underline;
 }
 body main .pedido #store {
   min-height: 750px;
@@ -89,6 +90,9 @@ body main .pedido #store #objetos {
   overflow-y: scroll;
 }
 body main .pedido #store #objetos .productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   border: 2px solid black;
   border-radius: 10%;
@@ -103,6 +107,10 @@ body main .pedido #store #objetos .productos img {
   margin: 1%;
   padding: 0;
 }
+body main .pedido #store #objetos .productos button {
+  background-color: #e4b78b;
+  font-weight: bold;
+}
 body main .pedido #store #contenedorCarrito .tituloCarrito {
   font-size: 1.5rem;
   margin: 3%;
@@ -112,17 +120,32 @@ body main .pedido #store #contenedorCarrito .tituloCarrito {
 }
 body main .pedido #store #contenedorCarrito #objetosCarrito {
   display: flex;
+  align-content: flex-start;
   height: 400px;
   overflow-y: scroll;
 }
 body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 3fr 2fr 2fr 2fr 0.1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . . . . ";
   height: 3rem;
   width: 100%;
   border: 2px solid black;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: #f5deb3;
+}
+body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito button {
+  border: none;
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+}
+body main .pedido #store #finalizarCompra {
+  background-color: #FAEDCD;
+  font-weight: bold;
 }
 body main .productos {
   margin: 0;

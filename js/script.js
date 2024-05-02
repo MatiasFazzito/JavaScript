@@ -186,7 +186,7 @@ function renderProduct(productos) {
         tarjetaProducto.innerHTML = `
         <h2>${el.nombre}</h2>
         <img src="../multi/${el.rutaimg}"/>
-        <h3>Precio: ${el.precio} </h3>
+        <h3>Precio: $${el.precio} </h3>
         <p>Stock: ${el.stock} </p>
         <button id="${el.id}">Agregar al carrito</button>
         `
@@ -235,10 +235,10 @@ function renderCarrito() {
         tarjetaProductoCarrito.className = "productoEnCarrito"
 
         tarjetaProductoCarrito.innerHTML = `
-            <h2>${el.nombre}</h2>
-            <h3>Precio unitario: ${el.precio}</h3>
-            <h4>Unidades: ${el.unidades}</h4>
-            <h4>Subtotal: ${el.subtotal}</h4>
+            <p>${el.nombre}</p>
+            <p>Precio unitario: $${el.precio}</p>
+            <p>Unidades: ${el.unidades}</p>
+            <p>Subtotal: $${el.subtotal}</p>
             <button id="eliminar${el.id}" > X </button>
         `
         contenedorCarrito.appendChild(tarjetaProductoCarrito)
