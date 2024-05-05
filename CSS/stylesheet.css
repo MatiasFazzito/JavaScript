@@ -198,5 +198,8 @@ body footer .nombre {
   font-weight: bold;
   font-size: 3rem;
 }
+body footer .redes {
+  width: 100%;
+}
 
 /*# sourceMappingURL=stylesheet.css.map */

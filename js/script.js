@@ -76,7 +76,7 @@ function principal() {
         //pan dulce
 
         { id: 64, nombre: "Pan frances x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_frances.jpg" },
-        { id: 65, nombre: "Miñon casero x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 100, rutaimg: "minon.jpg" },
+        { id: 65, nombre: "Miñon casero x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "minon.jpg" },
         { id: 66, nombre: "Fonda x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_fonda.jpg" },
         { id: 67, nombre: "Flauta x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "pan_flauta.jpg" },
         { id: 68, nombre: "Figacitas de manteca x1kg", categoria: "panaderia", subcategoria: "pan", stock: 100, precio: 2200, rutaimg: "figacitas_manteca.jpg" },
@@ -298,10 +298,14 @@ function verOcultarCarrito() {
 function finalizarCompra() {
     let carrito = getCarritoLS()
     let total = carrito.reduce((acc, el) => acc + el.subtotal, 0)
-    alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local! \n El total de la compra es: $" + total)
 
+    if (total !== 0) {
+        alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local! \n El total de la compra es: $" + total)
     localStorage.removeItem("carrito")
     renderCarrito([])
+    } else {
+        alert("Para finalizar la compra necesitas seleccionar algun producto!")
+    }
 }
 
 const getCarritoLS = () => JSON.parse(localStorage.getItem("carrito")) || []
