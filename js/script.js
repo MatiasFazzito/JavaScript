@@ -70,7 +70,7 @@ function principal() {
         //budines
 
         { id: 60, nombre: "Pan dulce con frutos secos", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "PD_frutos_secos.jpg" },
-        { id: 61, nombre: "Pan dulce con fruta seca y abrillantada", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "image-placeholder.png" },
+        { id: 61, nombre: "Pan dulce con fruta seca y abrillantada", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "image-placeholder.png" },//Increiblemente no encuentro foto
         { id: 62, nombre: "Pan dulce madrileño", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 6700, rutaimg: "PD_madrileño.jpg" },
         { id: 63, nombre: "Rosca de pascua", categoria: "dulce", subcategoria: "panDulce", stock: 100, precio: 7400, rutaimg: "rosca_pascua.jpg" },
         //pan dulce
@@ -171,7 +171,7 @@ function filters(productos) {
     function filtrarProductos(productos, categoria) {
         let productosMostrados = productos.filter(el => el.subcategoria === categoria)
 
-        productosMostrados !="" ? renderProduct(productosMostrados) : renderProduct(productos)
+        productosMostrados != "" ? renderProduct(productosMostrados) : renderProduct(productos)
     }
 }
 
@@ -237,13 +237,57 @@ function renderCarrito() {
         tarjetaProductoCarrito.innerHTML = `
             <p>${el.nombre}</p>
             <p>Precio unitario: $${el.precio}</p>
-            <p>Unidades: ${el.unidades}</p>
+            <button class="unidades" id="dec${el.id}"> -1 </button>
+            <p>${el.unidades}</p>
+            <button class="unidades" id="inc${el.id}"> +1 </button>
             <p>Subtotal: $${el.subtotal}</p>
             <button id="eliminar${el.id}" > X </button>
         `
         contenedorCarrito.appendChild(tarjetaProductoCarrito)
-    })
 
+        let botonResta = document.getElementById(`dec${el.id}`)
+        botonResta.addEventListener("click", decrementarUnidad)
+
+        let botonSuma = document.getElementById(`inc${el.id}`)
+        botonSuma.addEventListener("click", incrementarUnidad)
+
+        let botonEliminar = document.getElementById(`eliminar${el.id}`)
+        botonEliminar.addEventListener("click", eliminarDeCarrito)
+    })
+}
+
+function decrementarUnidad(e) {
+    let carrito = getCarritoLS()
+    let id = Number(e.target.id.substring(3))
+    let posCarrito = carrito.findIndex(el => el.id === id)
+    carrito[posCarrito].unidades--
+    if (carrito[posCarrito].unidades === 0) {
+        carrito = carrito.filter(el => el.id !== id)
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+        e.target.parentElement.remove()
+    } else {
+        carrito[posCarrito].subtotal = carrito[posCarrito].unidades * carrito[posCarrito].precio
+        localStorage.setItem("carrito", JSON.stringify(carrito))
+        renderCarrito()
+    }
+}
+
+function incrementarUnidad(e) {
+    let carrito = getCarritoLS()
+    let id = Number(e.target.id.substring(3))
+    let posCarrito = carrito.findIndex(el => el.id === id)
+    carrito[posCarrito].unidades++
+    carrito[posCarrito].subtotal = carrito[posCarrito].unidades * carrito[posCarrito].precio
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    renderCarrito()
+}
+
+function eliminarDeCarrito(e) {
+    let carrito = getCarritoLS()
+    let id = Number(e.target.id.substring(8))
+    carrito = carrito.filter(el => el.id !== id)
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    e.target.parentElement.remove()
 }
 
 function verOcultarCarrito() {
@@ -252,11 +296,14 @@ function verOcultarCarrito() {
 }
 
 function finalizarCompra() {
+    let carrito = getCarritoLS()
+    let total = carrito.reduce((acc, el) => acc + el.subtotal, 0)
+    alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local! \n El total de la compra es: $" + total)
+
     localStorage.removeItem("carrito")
     renderCarrito([])
-    alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local!")
 }
 
-const getCarritoLS = ()=> JSON.parse(localStorage.getItem("carrito")) || []
+const getCarritoLS = () => JSON.parse(localStorage.getItem("carrito")) || []
 
 principal()

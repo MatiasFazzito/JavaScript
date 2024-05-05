@@ -128,10 +128,10 @@ body main .pedido #store #contenedorCarrito #objetosCarrito {
 body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito {
   display: grid;
   grid-auto-columns: 1fr;
-  grid-template-columns: 3fr 2fr 2fr 2fr 0.1fr;
+  grid-template-columns: 3fr 2fr 0.1fr 0.5fr 0.1fr 2fr 0.1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: ". . . . . ";
+  gap: 0px 30px;
+  grid-template-areas: ". . . . . . .";
   height: 3rem;
   width: 100%;
   border: 2px solid black;
@@ -143,6 +143,11 @@ body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito b
   background-color: transparent;
   height: fit-content;
   width: fit-content;
+  font-weight: bold;
+}
+body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito .unidades {
+  border: 1px solid black;
+  width: 50px;
 }
 body main .pedido #store #finalizarCompra {
   background-color: #FAEDCD;
