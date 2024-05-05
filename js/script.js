@@ -22,7 +22,7 @@ function principal() {
         { id: 20, nombre: "Ferrocarril membrillo y manzana", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "image-placeholder.png" }, //no encuentro foto
         { id: 21, nombre: "Manzanita", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "image-placeholder.png" },//no encuentro foto
         { id: 22, nombre: "Palmerita", categoria: "dulce", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "palmeritas.jpg" },
-        { id: 23, nombre: "Librito de grasa", categoria: "salado", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "libritos.jpg" },
+        { id: 23, nombre: "Librito de grasa", categoria: "salado", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "libritos_grasa.jpg" },
         { id: 24, nombre: "Cuernito de grasa", categoria: "salado", subcategoria: "factura", stock: 100, precio: 266, rutaimg: "cuernitos.jpg" },
         //facturas
 
