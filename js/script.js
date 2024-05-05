@@ -200,9 +200,7 @@ function renderProduct(productos) {
 function agregarAlCarrito(boton, productos) {
 
     let carrito = getCarritoLS()
-
     let productid = Number(boton.target.id)
-
     let productoEnCarrito = carrito.findIndex(el => el.id === productid)
     let productoBuscado = productos.find(el => el.id === productid)
 
@@ -226,14 +224,12 @@ function agregarAlCarrito(boton, productos) {
 function renderCarrito() {
 
     let carrito = getCarritoLS()
-
     let contenedorCarrito = document.getElementById("objetosCarrito")
     contenedorCarrito.innerHTML = ""
 
     carrito.forEach(el => {
         let tarjetaProductoCarrito = document.createElement("div")
         tarjetaProductoCarrito.className = "productoEnCarrito"
-
         tarjetaProductoCarrito.innerHTML = `
             <p>${el.nombre}</p>
             <p>Precio unitario: $${el.precio}</p>
@@ -250,17 +246,20 @@ function renderCarrito() {
 
         let botonSuma = document.getElementById(`inc${el.id}`)
         botonSuma.addEventListener("click", incrementarUnidad)
-
+        
         let botonEliminar = document.getElementById(`eliminar${el.id}`)
         botonEliminar.addEventListener("click", eliminarDeCarrito)
     })
 }
 
 function decrementarUnidad(e) {
+
     let carrito = getCarritoLS()
     let id = Number(e.target.id.substring(3))
     let posCarrito = carrito.findIndex(el => el.id === id)
+
     carrito[posCarrito].unidades--
+
     if (carrito[posCarrito].unidades === 0) {
         carrito = carrito.filter(el => el.id !== id)
         localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -273,9 +272,11 @@ function decrementarUnidad(e) {
 }
 
 function incrementarUnidad(e) {
+
     let carrito = getCarritoLS()
     let id = Number(e.target.id.substring(3))
     let posCarrito = carrito.findIndex(el => el.id === id)
+
     carrito[posCarrito].unidades++
     carrito[posCarrito].subtotal = carrito[posCarrito].unidades * carrito[posCarrito].precio
     localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -283,8 +284,10 @@ function incrementarUnidad(e) {
 }
 
 function eliminarDeCarrito(e) {
+
     let carrito = getCarritoLS()
     let id = Number(e.target.id.substring(8))
+
     carrito = carrito.filter(el => el.id !== id)
     localStorage.setItem("carrito", JSON.stringify(carrito))
     e.target.parentElement.remove()
@@ -296,6 +299,7 @@ function verOcultarCarrito() {
 }
 
 function finalizarCompra() {
+
     let carrito = getCarritoLS()
     let total = carrito.reduce((acc, el) => acc + el.subtotal, 0)
 
