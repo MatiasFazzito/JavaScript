@@ -217,6 +217,8 @@ function agregarAlCarrito(boton, productos) {
         })
     }
 
+    dispararTostada("Producto agregado", "top", 2000)
+
     localStorage.setItem("carrito", JSON.stringify(carrito))
     renderCarrito()
 }
@@ -246,7 +248,7 @@ function renderCarrito() {
 
         let botonSuma = document.getElementById(`inc${el.id}`)
         botonSuma.addEventListener("click", incrementarUnidad)
-        
+
         let botonEliminar = document.getElementById(`eliminar${el.id}`)
         botonEliminar.addEventListener("click", eliminarDeCarrito)
     })
@@ -264,10 +266,12 @@ function decrementarUnidad(e) {
         carrito = carrito.filter(el => el.id !== id)
         localStorage.setItem("carrito", JSON.stringify(carrito))
         e.target.parentElement.remove()
+        dispararTostada("Producto eliminado", "bottom", 2000)
     } else {
         carrito[posCarrito].subtotal = carrito[posCarrito].unidades * carrito[posCarrito].precio
         localStorage.setItem("carrito", JSON.stringify(carrito))
         renderCarrito()
+        dispararTostada("Producto eliminado", "bottom", 2000)
     }
 }
 
@@ -281,12 +285,15 @@ function incrementarUnidad(e) {
     carrito[posCarrito].subtotal = carrito[posCarrito].unidades * carrito[posCarrito].precio
     localStorage.setItem("carrito", JSON.stringify(carrito))
     renderCarrito()
+    dispararTostada("Producto agregado", "bottom", 2000)
 }
 
 function eliminarDeCarrito(e) {
 
     let carrito = getCarritoLS()
     let id = Number(e.target.id.substring(8))
+
+    dispararTostada("Producto eliminado", "bottom", 2000)
 
     carrito = carrito.filter(el => el.id !== id)
     localStorage.setItem("carrito", JSON.stringify(carrito))
@@ -304,12 +311,32 @@ function finalizarCompra() {
     let total = carrito.reduce((acc, el) => acc + el.subtotal, 0)
 
     if (total !== 0) {
-        alert("Gracias por su compra! \nPodra pasar a retirarla en 15 minutos por el local! \n El total de la compra es: $" + total)
-    localStorage.removeItem("carrito")
-    renderCarrito([])
+        dispararAlert("success", "Gracias por su compra!", "Podra pasar a retirarla en 15 minutos por el local! \n El total de la compra es: $" + total)
+        localStorage.removeItem("carrito")
+        renderCarrito([])
     } else {
-        alert("Para finalizar la compra necesitas seleccionar algun producto!")
+        dispararAlert("error", "Para finalizar la compra necesitas seleccionar algun producto!")
     }
+}
+
+function dispararAlert(icon, title, text) {
+    Swal.fire({
+        icon,
+        title,
+        text,
+        timer: 5000,
+        timerProgressBar: true,
+        showConfirmButton: false
+    })
+}
+
+function dispararTostada(text, gravity, duration) {
+    Toastify({
+        text,
+        gravity,
+        duration,
+        className: "tostada"
+    }).showToast()
 }
 
 const getCarritoLS = () => JSON.parse(localStorage.getItem("carrito")) || []

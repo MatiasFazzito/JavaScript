@@ -7,12 +7,18 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     line-height: 1.6;
     background-color: $fondo;
     font-family: "Domine", serif;
     font-size: 1.5rem;
     font-weight: bold;
+
+    .tostada{
+        background: $fondo3;
+    }
 
     header {
         border-bottom: 2px solid black;
