@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px) {
+    body{
+        font-size: 1rem;
+        main{
+            .imgfondo{
+                .frase{
+                    font-size: 3rem;
+                }
+            }
+            .productos{
+                .subtitulo{
+                    font-size: 1.5rem;
+                }
+                .accesos{
+                    img{
+                        width: 182px;
+                    }
+                }
+            }
+            .pedido{
+                #store{
+                    
+                }
+            }
+        }
+        footer{
+            .nombre{
+                font-size: 1.5rem;
+            }
+            .logo{
+                width: 30%;
+            }
+            .proximamente{
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -44,6 +44,8 @@ body main .imgfondo .fondocontraste {
   background-color: rgba(255, 51, 51, 0.8705882353);
 }
 body main .imgfondo .fondocontraste .vision {
+  margin: 5%;
+  padding: 5%;
   color: #ffffff;
 }
 body main .pedido {
@@ -65,23 +67,27 @@ body main .pedido #store #filtros {
   background-color: #FAEDCD;
 }
 body main .pedido #store #filtros .titulo {
-  font-size: 1.5rem;
   margin: 3%;
   padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgba(255, 51, 51, 0.8705882353);
   text-align: center;
-  text-decoration: underline;
+  text-decoration: underline double;
 }
-body main .pedido #store #filtros .titulo .botonCarrito {
-  width: 100%;
-  height: 6%;
+body main .pedido #store #filtros .botonCarrito {
+  margin: 3%;
+  padding: 0;
+  width: 90%;
+  height: 5%;
   font-size: 1rem;
   border: none;
   text-decoration: underline;
-  background-color: transparent;
+  background-color: #FAEDCD;
 }
 body main .pedido #store #filtros .botonFiltro {
   width: 100%;
-  height: 6%;
+  height: 5%;
   font-size: 1rem;
   border: none;
   background-color: transparent;
@@ -93,27 +99,31 @@ body main .pedido #store #objetos {
   overflow-y: scroll;
 }
 body main .pedido #store #objetos .productos {
+  margin: 1%;
+  padding: 1%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  min-width: 250px;
   height: 400px;
   border: 2px solid black;
   border-radius: 10%;
   font-size: 1rem;
   background-color: #f5deb3;
-  margin: 1%;
-  padding: 1%;
 }
 body main .pedido #store #objetos .productos img {
-  width: 200px;
-  height: 110px;
   margin: 1%;
   padding: 0;
+  width: 200px;
+  height: 110px;
 }
 body main .pedido #store #objetos .productos button {
   background-color: #e4b78b;
   font-weight: bold;
+  width: fit-content;
 }
 body main .pedido #store #contenedorCarrito .tituloCarrito {
   font-size: 1.5rem;
@@ -155,6 +165,7 @@ body main .pedido #store #contenedorCarrito #objetosCarrito .productoEnCarrito .
 body main .pedido #store #finalizarCompra {
   background-color: #FAEDCD;
   font-weight: bold;
+  width: 100%;
 }
 body main .productos {
   margin: 0;
@@ -168,6 +179,9 @@ body main .productos .subtitulo {
 body main .productos .accesos {
   border: 1px solid;
   border-width: 1px 0;
+}
+body main .productos .accesos img {
+  width: 100%;
 }
 body main .productos .accesos .link {
   text-decoration: none;
@@ -208,15 +222,45 @@ body footer {
   color: #ffffff;
 }
 body footer .logo {
-  height: 50%;
+  width: 20%;
 }
 body footer .nombre {
   font-family: "Norican", cursive;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+body footer .proximamente {
+  font-size: 1.5rem;
 }
 body footer .redes {
-  width: 100%;
+  width: 75%;
+}
+body footer a {
+  width: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  body main .imgfondo .frase {
+    font-size: 3rem;
+  }
+  body main .productos .subtitulo {
+    font-size: 1.5rem;
+  }
+  body main .productos .accesos img {
+    width: 182px;
+  }
+  body footer .nombre {
+    font-size: 1.5rem;
+  }
+  body footer .logo {
+    width: 30%;
+  }
+  body footer .proximamente {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
